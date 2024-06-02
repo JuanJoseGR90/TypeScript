@@ -21,6 +21,7 @@ type Person = {
 interface PruebaInterface {
     numLibros?: number,
     sumar(): number
+    libros: string [];
 }
 
 const person: Person = {
@@ -47,14 +48,13 @@ const personInterface: PruebaInterface = {
 
         return n3;
     },
-    numLibros: 500
+    numLibros: 500,
+    libros: ["En las montañas de la locura", "La llamada del Cthulhu"]
 };
 
 // Ejecución
-/*
 console.log("Nombre: " + person.name);
 console.log("Edad: " + person.age);
 console.log("Función: " + person.resta());
 console.log(personInterface.sumar());
-console.log(personInterface.numLibros);
-*/
+console.log(personInterface.libros);
